@@ -19,6 +19,7 @@
 		69E3E6EE16659F4C005101D2 /* AutoXMLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E3E6ED16659F4C005101D2 /* AutoXMLTests.m */; };
 		69E3E6F816659F9B005101D2 /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 69E3E6F716659F9B005101D2 /* test.xml */; };
 		69E3E6FC16659FE7005101D2 /* AutoXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E3E6FB16659FE7005101D2 /* AutoXMLParser.m */; };
+		69E7E4A51665B835002F9073 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 69E7E4A41665B835002F9073 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		69E3E6F716659F9B005101D2 /* test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.xml; sourceTree = "<group>"; };
 		69E3E6FA16659FE7005101D2 /* AutoXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoXMLParser.h; sourceTree = "<group>"; };
 		69E3E6FB16659FE7005101D2 /* AutoXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoXMLParser.m; sourceTree = "<group>"; };
+		69E7E4A41665B835002F9073 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		69E3E6B416659F4B005101D2 = {
 			isa = PBXGroup;
 			children = (
+				69E7E4A41665B835002F9073 /* README */,
 				69E3E6C916659F4B005101D2 /* AutoXML */,
 				69E3E6E616659F4C005101D2 /* AutoXMLTests */,
 				69E3E6C216659F4B005101D2 /* Frameworks */,
@@ -243,6 +246,7 @@
 				69E3E6D416659F4B005101D2 /* Credits.rtf in Resources */,
 				69E3E6DA16659F4C005101D2 /* MainMenu.xib in Resources */,
 				69E3E6F816659F9B005101D2 /* test.xml in Resources */,
+				69E7E4A51665B835002F9073 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +457,7 @@
 				69E3E6F316659F4C005101D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69E3E6F416659F4C005101D2 /* Build configuration list for PBXNativeTarget "AutoXMLTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +466,7 @@
 				69E3E6F616659F4C005101D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
