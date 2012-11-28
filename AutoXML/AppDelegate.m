@@ -7,14 +7,18 @@
 //
 
 #import "AppDelegate.h"
-
+#import "AutoXMLParser.h"
 @implementation AppDelegate
 
 @synthesize window = _window;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+
+    AutoXMLParser* myParser = [AutoXMLParser new];
+    
+    [myParser parseXMLFile:[[NSBundle mainBundle]pathForResource:@"test" ofType:@"xml"]];
+    
 }
 
 @end

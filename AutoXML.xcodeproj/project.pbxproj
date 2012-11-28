@@ -17,6 +17,8 @@
 		69E3E6E316659F4C005101D2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E3E6C316659F4B005101D2 /* Cocoa.framework */; };
 		69E3E6EB16659F4C005101D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69E3E6E916659F4C005101D2 /* InfoPlist.strings */; };
 		69E3E6EE16659F4C005101D2 /* AutoXMLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E3E6ED16659F4C005101D2 /* AutoXMLTests.m */; };
+		69E3E6F816659F9B005101D2 /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 69E3E6F716659F9B005101D2 /* test.xml */; };
+		69E3E6FC16659FE7005101D2 /* AutoXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E3E6FB16659FE7005101D2 /* AutoXMLParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +37,23 @@
 		69E3E6C616659F4B005101D2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		69E3E6C716659F4B005101D2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		69E3E6C816659F4B005101D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		69E3E6CB16659F4B005101D2 /* AutoXML-Info.plist */ = {isa = PBXFileReference; path = "AutoXML-Info.plist"; sourceTree = "<group>"; };
+		69E3E6CB16659F4B005101D2 /* AutoXML-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoXML-Info.plist"; sourceTree = "<group>"; };
 		69E3E6CD16659F4B005101D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		69E3E6CF16659F4B005101D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		69E3E6D116659F4B005101D2 /* AutoXML-Prefix.pch */ = {isa = PBXFileReference; path = "AutoXML-Prefix.pch"; sourceTree = "<group>"; };
+		69E3E6D116659F4B005101D2 /* AutoXML-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutoXML-Prefix.pch"; sourceTree = "<group>"; };
 		69E3E6D316659F4B005101D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		69E3E6D516659F4B005101D2 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		69E3E6D516659F4B005101D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69E3E6D616659F4B005101D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		69E3E6D916659F4C005101D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		69E3E6E016659F4C005101D2 /* AutoXMLTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoXMLTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E3E6E116659F4C005101D2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		69E3E6E816659F4C005101D2 /* AutoXMLTests-Info.plist */ = {isa = PBXFileReference; path = "AutoXMLTests-Info.plist"; sourceTree = "<group>"; };
+		69E3E6E816659F4C005101D2 /* AutoXMLTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoXMLTests-Info.plist"; sourceTree = "<group>"; };
 		69E3E6EA16659F4C005101D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		69E3E6EC16659F4C005101D2 /* AutoXMLTests.h */ = {isa = PBXFileReference; path = AutoXMLTests.h; sourceTree = "<group>"; };
+		69E3E6EC16659F4C005101D2 /* AutoXMLTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoXMLTests.h; sourceTree = "<group>"; };
 		69E3E6ED16659F4C005101D2 /* AutoXMLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoXMLTests.m; sourceTree = "<group>"; };
+		69E3E6F716659F9B005101D2 /* test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.xml; sourceTree = "<group>"; };
+		69E3E6FA16659FE7005101D2 /* AutoXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoXMLParser.h; sourceTree = "<group>"; };
+		69E3E6FB16659FE7005101D2 /* AutoXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoXMLParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +119,8 @@
 		69E3E6C916659F4B005101D2 /* AutoXML */ = {
 			isa = PBXGroup;
 			children = (
+				69E3E6F916659FC4005101D2 /* AutoXMLParserObject */,
+				69E3E6F716659F9B005101D2 /* test.xml */,
 				69E3E6D516659F4B005101D2 /* AppDelegate.h */,
 				69E3E6D616659F4B005101D2 /* AppDelegate.m */,
 				69E3E6D816659F4C005101D2 /* MainMenu.xib */,
@@ -151,6 +158,15 @@
 				69E3E6E916659F4C005101D2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69E3E6F916659FC4005101D2 /* AutoXMLParserObject */ = {
+			isa = PBXGroup;
+			children = (
+				69E3E6FA16659FE7005101D2 /* AutoXMLParser.h */,
+				69E3E6FB16659FE7005101D2 /* AutoXMLParser.m */,
+			);
+			name = AutoXMLParserObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +242,7 @@
 				69E3E6CE16659F4B005101D2 /* InfoPlist.strings in Resources */,
 				69E3E6D416659F4B005101D2 /* Credits.rtf in Resources */,
 				69E3E6DA16659F4C005101D2 /* MainMenu.xib in Resources */,
+				69E3E6F816659F9B005101D2 /* test.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +279,7 @@
 			files = (
 				69E3E6D016659F4B005101D2 /* main.m in Sources */,
 				69E3E6D716659F4B005101D2 /* AppDelegate.m in Sources */,
+				69E3E6FC16659FE7005101D2 /* AutoXMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
