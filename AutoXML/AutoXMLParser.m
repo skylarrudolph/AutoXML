@@ -12,7 +12,7 @@
 //@synthesize arrayOfCurrent;
 
 
--(void)parseXMLFile:(NSString *)pathToFile{
+-(NSMutableDictionary*)parseXMLFile:(NSString *)pathToFile{
     arrayOfCurrent = [[NSMutableArray alloc]init];
 //    autoParser = [[AutoXMLParser alloc]init];
     NSURL* myURL = [NSURL fileURLWithPath:pathToFile];
@@ -20,7 +20,7 @@
     myParser = [[NSXMLParser alloc]initWithContentsOfURL:myURL];
     [myParser setDelegate:self];
     [myParser parse];
-    
+    return dictionaryAfterParsing;
 //    [autoParser parse];
 
 }
@@ -33,13 +33,13 @@
 
 -(void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{
     [arrayOfCurrent addObject:elementName];
-    NSLog(@"Added Object: %u", [arrayOfCurrent count]);
+    NSLog(@"Added Object: %@", [arrayOfCurrent description]);
 
 }
 
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
     [arrayOfCurrent removeLastObject];
-    NSLog(@"Removed Object: %u", [arrayOfCurrent count]);
+    NSLog(@"Removed Object: %@", [arrayOfCurrent description]);
 }
 
 -(void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError{

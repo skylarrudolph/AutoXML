@@ -14,5 +14,5 @@
     NSMutableArray* arrayOfCurrent;
 }
 
--(void)parseXMLFile:(NSString*)pathToFile;
+-(NSMutableDictionary*)parseXMLFile:(NSString*)pathToFile;
 @end
