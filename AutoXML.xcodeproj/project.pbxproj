@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69A3495B16681E770052FD29 /* test2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 69A3495A16681E770052FD29 /* test2.xml */; };
+		69B2A2531666957800E5FE12 /* NSString+StringManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B2A2521666957800E5FE12 /* NSString+StringManipulation.m */; };
 		69E3E6C416659F4B005101D2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E3E6C316659F4B005101D2 /* Cocoa.framework */; };
 		69E3E6CE16659F4B005101D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69E3E6CC16659F4B005101D2 /* InfoPlist.strings */; };
 		69E3E6D016659F4B005101D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E3E6CF16659F4B005101D2 /* main.m */; };
@@ -33,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69A3495A16681E770052FD29 /* test2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test2.xml; sourceTree = "<group>"; };
+		69B2A2511666957800E5FE12 /* NSString+StringManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+StringManipulation.h"; path = "Utilities/NSString+StringManipulation.h"; sourceTree = "<group>"; };
+		69B2A2521666957800E5FE12 /* NSString+StringManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+StringManipulation.m"; path = "Utilities/NSString+StringManipulation.m"; sourceTree = "<group>"; };
 		69E3E6BF16659F4B005101D2 /* AutoXML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoXML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E3E6C316659F4B005101D2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		69E3E6C616659F4B005101D2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -124,6 +129,7 @@
 			children = (
 				69E3E6F916659FC4005101D2 /* AutoXMLParserObject */,
 				69E3E6F716659F9B005101D2 /* test.xml */,
+				69A3495A16681E770052FD29 /* test2.xml */,
 				69E3E6D516659F4B005101D2 /* AppDelegate.h */,
 				69E3E6D616659F4B005101D2 /* AppDelegate.m */,
 				69E3E6D816659F4C005101D2 /* MainMenu.xib */,
@@ -168,6 +174,8 @@
 			children = (
 				69E3E6FA16659FE7005101D2 /* AutoXMLParser.h */,
 				69E3E6FB16659FE7005101D2 /* AutoXMLParser.m */,
+				69B2A2511666957800E5FE12 /* NSString+StringManipulation.h */,
+				69B2A2521666957800E5FE12 /* NSString+StringManipulation.m */,
 			);
 			name = AutoXMLParserObject;
 			sourceTree = "<group>";
@@ -217,7 +225,7 @@
 		69E3E6B616659F4B005101D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = 69E3E6B916659F4B005101D2 /* Build configuration list for PBXProject "AutoXML" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -247,6 +255,7 @@
 				69E3E6DA16659F4C005101D2 /* MainMenu.xib in Resources */,
 				69E3E6F816659F9B005101D2 /* test.xml in Resources */,
 				69E7E4A51665B835002F9073 /* README.md in Resources */,
+				69A3495B16681E770052FD29 /* test2.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +293,7 @@
 				69E3E6D016659F4B005101D2 /* main.m in Sources */,
 				69E3E6D716659F4B005101D2 /* AppDelegate.m in Sources */,
 				69E3E6FC16659FE7005101D2 /* AutoXMLParser.m in Sources */,
+				69B2A2531666957800E5FE12 /* NSString+StringManipulation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
