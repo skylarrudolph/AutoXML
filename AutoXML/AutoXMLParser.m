@@ -105,6 +105,7 @@
 
 -(void)parserDidEndDocument:(NSXMLParser *)parser{
     dictionaryAfterParsing = [arrayOfCurrent lastObject];
+    NSLog(@"%@", dictionaryAfterParsing);
 }
 
 -(void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError{
