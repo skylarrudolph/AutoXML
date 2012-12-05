@@ -9,12 +9,14 @@ The idea is to create an NSMutableDictionary that will hold all of the keys for 
 
 How it works. 
 
-First we will instantiate an AutoXML object. 
+First we will instantiate an AutoXMLParser object and parse it. 
 
+```smalltalk
     NSMutableDictionary* resultingDictionary;
     AutoXMLParser* myParser = [AutoXMLParser new];
     resultingDictionary = [myParser parseXMLFile:[[NSBundle mainBundle]pathForResource:@"test" ofType:@"xml"]];
-
+```
+This resulting dictionary (resultingDictionary) will contain all of our key-value pairs of our XML file.
 
 
 <i>Remember, life should not be spent rewriting code.
