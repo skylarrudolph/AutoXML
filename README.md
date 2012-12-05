@@ -11,7 +11,7 @@ The idea is to create an NSMutableDictionary that will hold all of the keys for 
 
 First we will instantiate an AutoXMLParser object and parse it. 
 
-```smalltalk
+```objectivec
     NSMutableDictionary* resultingDictionary;
     AutoXMLParser* myParser = [AutoXMLParser new];
     resultingDictionary = [myParser parseXMLFile:[[NSBundle mainBundle]pathForResource:@"test" ofType:@"xml"]];
@@ -30,7 +30,7 @@ And our test.xml
     </note>
 ```
 
-Therefore, our <note> tag should contain all of the key-value pairs before the ending </note> tag. 
+Therefore, our "<note>" tag should contain all of the key-value pairs before the ending "</note>" tag. 
 
 To access this, we will use the NSMutableDictionary+DictionaryManipulation.h getObjectForKey:(NSString*) function which will return us an id type (will explain later) for the value that the key is pointing to or NULL if it is non-existent. 
 
