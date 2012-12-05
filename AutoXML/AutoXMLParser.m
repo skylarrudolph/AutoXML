@@ -170,10 +170,11 @@
                 if([[[x objectForKey:parentNodeKey]objectForKey:elementName]isKindOfClass:[NSDictionary class]]){
                     NSMutableDictionary* currentDictToArray = [[x objectForKey:parentNodeKey]objectForKey:elementName];
                     [newDataHold addObject:currentDictToArray];
-                    [newDataHold addObject:[childDict allValues]];                                        
+//                    Fix here.
+                    [newDataHold addObject:[childDict valueForKey:elementName]];                                        
                 } else{
                     newDataHold = [[x objectForKey:parentNodeKey]objectForKey:elementName];
-                    [newDataHold addObject:[childDict allValues]];
+                    [newDataHold addObject:[childDict valueForKey:elementName]];
                 }
                 [[x objectForKey:parentNodeKey] setObject:newDataHold forKey:elementName];
             }

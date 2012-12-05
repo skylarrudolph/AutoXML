@@ -18,7 +18,13 @@
     NSMutableDictionary* resultingDictionary;
     AutoXMLParser* myParser = [AutoXMLParser new];
     resultingDictionary = [myParser parseXMLFile:[[NSBundle mainBundle]pathForResource:@"test" ofType:@"xml"]];
-    [resultingDictionary getObjectForKey:@"x"];
+    
+    id result = [resultingDictionary getObjectForKey:@"catalog"];
+    id result2 = [result getObjectForKey:@"book"];
+    for(NSMutableDictionary* x in result2){
+        NSLog(@"%@", [x valueForKey:@"description"]);
+//        NSLog(@"%@", (NSString*)[x valueForKey:@"title"]);
+    }
 }
 
 @end

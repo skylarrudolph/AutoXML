@@ -13,8 +13,10 @@
 -(id)getObjectForKey:(NSString*)key{
 //    NSLog(@"%@", [self allValues]);
     for(NSString* allKeys in [self allKeys]){
-        NSLog(@"%@", allKeys);
-//        NSLog(@"%@", [self valueForKey:allKeys]);
+        if([allKeys isEqualToString:key]){
+            return [self valueForKey:allKeys];
+        }
+        //        NSLog(@"%@", [self valueForKey:allKeys]);
         if([[self valueForKey:allKeys]objectForKey:key]!=nil){
             NSLog(@"I believe we found it.");
             return [[self valueForKey:allKeys]objectForKey:key];
