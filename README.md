@@ -7,5 +7,15 @@ The idea is to create an NSMutableDictionary that will hold all of the keys for 
 
 <li>I ask that you please add to this idea and make this easy for EVERYBODY to use. 
 
+How it works. 
+
+First we will instantiate an AutoXML object. 
+
+    NSMutableDictionary* resultingDictionary;
+    AutoXMLParser* myParser = [AutoXMLParser new];
+    resultingDictionary = [myParser parseXMLFile:[[NSBundle mainBundle]pathForResource:@"test" ofType:@"xml"]];
+
+
+
 <i>Remember, life should not be spent rewriting code.
 -skylarrudolph.
