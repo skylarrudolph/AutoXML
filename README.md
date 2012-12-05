@@ -7,7 +7,7 @@ The idea is to create an NSMutableDictionary that will hold all of the keys for 
 
 <li>I ask that you please add to this idea and make this easy for EVERYBODY to use. 
 
-How it works. 
+<b>How it works.</b>
 
 First we will instantiate an AutoXMLParser object and parse it. 
 
@@ -18,6 +18,17 @@ First we will instantiate an AutoXMLParser object and parse it.
 ```
 This resulting dictionary (resultingDictionary) will contain all of our key-value pairs of our XML file.
 
+And our test.xml
+
+```xml
+    <?xml version="1.0"?>
+    <note>
+        <to>Tove</to>
+        <from>Jani</from>
+        <heading>Reminder</heading>
+        <body>Don't forget me this weekend!</body>
+    </note>
+```
 
 <i>Remember, life should not be spent rewriting code.
 -skylarrudolph.
