@@ -8,16 +8,17 @@
 
 #import "AppDelegate.h"
 #import "AutoXMLParser.h"
+#import "NSMutableDictionary+DictionaryManipulation.h"
 @implementation AppDelegate
 
 @synthesize window = _window;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-
+    NSMutableDictionary* resultingDictionary;
     AutoXMLParser* myParser = [AutoXMLParser new];
-    [myParser parseXMLFile:[[NSBundle mainBundle]pathForResource:@"test3" ofType:@"xml"]];
-    
+    resultingDictionary = [myParser parseXMLFile:[[NSBundle mainBundle]pathForResource:@"test" ofType:@"xml"]];
+    [resultingDictionary getObjectForKey:@"x"];
 }
 
 @end

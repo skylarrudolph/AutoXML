@@ -23,6 +23,7 @@
 		69E3E6FC16659FE7005101D2 /* AutoXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E3E6FB16659FE7005101D2 /* AutoXMLParser.m */; };
 		69E7E4A51665B835002F9073 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 69E7E4A41665B835002F9073 /* README.md */; };
 		69EE2EF8166FA2D800F3D2D7 /* test3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 69EE2EF7166FA2D800F3D2D7 /* test3.xml */; };
+		69EE2EFC166FAD5300F3D2D7 /* NSMutableDictionary+DictionaryManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EE2EFB166FAD5300F3D2D7 /* NSMutableDictionary+DictionaryManipulation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		69E3E6FB16659FE7005101D2 /* AutoXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoXMLParser.m; sourceTree = "<group>"; };
 		69E7E4A41665B835002F9073 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		69EE2EF7166FA2D800F3D2D7 /* test3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test3.xml; sourceTree = "<group>"; };
+		69EE2EFA166FAD5300F3D2D7 /* NSMutableDictionary+DictionaryManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+DictionaryManipulation.h"; sourceTree = "<group>"; };
+		69EE2EFB166FAD5300F3D2D7 /* NSMutableDictionary+DictionaryManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+DictionaryManipulation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,8 @@
 		69E3E6F916659FC4005101D2 /* AutoXMLParserObject */ = {
 			isa = PBXGroup;
 			children = (
+				69EE2EFA166FAD5300F3D2D7 /* NSMutableDictionary+DictionaryManipulation.h */,
+				69EE2EFB166FAD5300F3D2D7 /* NSMutableDictionary+DictionaryManipulation.m */,
 				69E3E6FA16659FE7005101D2 /* AutoXMLParser.h */,
 				69E3E6FB16659FE7005101D2 /* AutoXMLParser.m */,
 				69B2A2511666957800E5FE12 /* NSString+StringManipulation.h */,
@@ -298,6 +303,7 @@
 				69E3E6D716659F4B005101D2 /* AppDelegate.m in Sources */,
 				69E3E6FC16659FE7005101D2 /* AutoXMLParser.m in Sources */,
 				69B2A2531666957800E5FE12 /* NSString+StringManipulation.m in Sources */,
+				69EE2EFC166FAD5300F3D2D7 /* NSMutableDictionary+DictionaryManipulation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

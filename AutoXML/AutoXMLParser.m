@@ -10,7 +10,6 @@
 
 @implementation AutoXMLParser
 @synthesize currentString;
-
 /**
  
     AutoXML is a project that I worked on to make XML deserialization possible and to provide an easy way to decrypt XML files into an object. The way that it works:
@@ -200,18 +199,28 @@
         }
 
     }
-
 }
 
 // This will save the final dictionary object to a returnable dictionary that a user can use.  
 -(void)parserDidEndDocument:(NSXMLParser *)parser{
     dictionaryAfterParsing = [arrayOfCurrent lastObject];
-    NSLog(@"%@", dictionaryAfterParsing);
+//    NSLog(@"%@", dictionaryAfterParsing);
 }
 
 // Generic Error Handling.
 -(void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError{
     NSLog(@"Error: %@", [parseError description]);
 }
+
+// End of Parser Functions. Let's get some functionality out of this.
+
+
+
+
+
+
+
+
+
 
 @end
