@@ -16,8 +16,7 @@
 {
 
     AutoXMLParser* myParser = [AutoXMLParser new];
-    
-    [myParser parseXMLFile:[[NSBundle mainBundle]pathForResource:@"test" ofType:@"xml"]];
+    [myParser parseXMLFile:[[NSBundle mainBundle]pathForResource:@"test3" ofType:@"xml"]];
     
 }
 
