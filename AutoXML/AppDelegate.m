@@ -24,11 +24,13 @@
     
     
     //Array notation to cycle through array.
-    for(NSMutableDictionary* dictionariesInsideResult2 in result2){
-        NSLog(@"Title: %@", [dictionariesInsideResult2 valueForKey:@"title"]);
-        NSLog(@"Author: %@", [dictionariesInsideResult2 valueForKey:@"author"]);
-        NSLog(@"\n");
-    }
+//    for(NSMutableDictionary* dictionariesInsideResult2 in result2){
+//        NSLog(@"Title: %@", [dictionariesInsideResult2 valueForKey:@"title"]);
+//        NSLog(@"Author: %@", [dictionariesInsideResult2 valueForKey:@"author"]);
+//        NSLog(@"\n");
+//    }
 }
+
+
 
 @end

@@ -131,15 +131,32 @@
     }
 }
 
+-(void)parser:(NSXMLParser *)parser foundCDATA:(NSData *)CDATABlock{
+    NSLog(@"I believe I found something.");
+}
+
+
+
 -(void)parserDidStartDocument:(NSXMLParser *)parser{
 //    NSLog(@"Starting Document");
 }
 
 -(void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{
-//    [arrayOfCurrent addObject:[NSMutableDictionary new]];
+    
     NSDictionary* newTag = [[NSMutableDictionary alloc]init];
-    NSDictionary* pointerToNewTag = [[NSMutableDictionary alloc]initWithObjects:[NSArray arrayWithObject:newTag] forKeys:[NSArray arrayWithObject:elementName]];
+    NSDictionary* pointerToNewTag;
+    //Need to see if there are any attributes that we will need to add. 
+    if([attributeDict count]!=0){
+        pointerToNewTag =  [[NSMutableDictionary alloc]initWithObjects:[NSArray arrayWithObject:attributeDict] forKeys:[NSArray arrayWithObject:elementName]];
+    } else {
+        pointerToNewTag = [[NSMutableDictionary alloc]initWithObjects:[NSArray arrayWithObject:newTag] forKeys:[NSArray arrayWithObject:elementName]];
+
+    }
+    
     [arrayOfCurrent addObject:pointerToNewTag];
+
+//    [arrayOfCurrent addObject:[NSMutableDictionary new]];
+
     
 }
 
