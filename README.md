@@ -102,7 +102,7 @@ Initialization is the same as before, but to enter and retrieve all of the resul
     id result = [resultingDictionary getObjectForKey:@"catalog"];
     id result2 = [result getObjectForKey:@"book"];
     
-    //\ notation to cycle through array.
+    // notation to cycle through array.
     for(NSMutableDictionary* dictionariesInsideResult2 in result2){
         NSLog(@"Title: %@", [dictionariesInsideResult2 valueForKey:@"title"]);
         NSLog(@"Author: %@", [dictionariesInsideResult2 valueForKey:@"author"]);
@@ -126,7 +126,7 @@ Title: Oberon's Legacy
 Author: Corets, Eva
 
 ```
-as the output of the code. As you can see, accessing nested data structures is as easy as cycling through the array that it points to and pulling out the tag that you need, in our case, "title" and "author". 
+as the output of the code. As you can see, accessing nested data structures is as easy as cycling through the dictionary that it points to and pulling out the tag that you need, in our case, "title" and "author". 
 
 
 <i>Remember, life should not be spent rewriting code.
