@@ -17,12 +17,18 @@
 {
     NSMutableDictionary* resultingDictionary;
     AutoXMLParser* myParser = [AutoXMLParser new];
-    resultingDictionary = [myParser parseXMLFile:[[NSBundle mainBundle]pathForResource:@"test2" ofType:@"xml"]];
+    resultingDictionary = [myParser parseXMLFile:[[NSBundle mainBundle]pathForResource:@"test" ofType:@"xml"]];
     
-    id result = [resultingDictionary getObjectForKey:@"note"];
-//    id result2 = [result getObjectForKey:@"book"];
-        NSLog(@"%@", [result valueForKey:@"to"])
-    ;
+    id result = [resultingDictionary getObjectForKey:@"catalog"];
+    id result2 = [result getObjectForKey:@"book"];
+    
+    
+    //Array notation to cycle through array.
+    for(NSMutableDictionary* dictionariesInsideResult2 in result2){
+        NSLog(@"Title: %@", [dictionariesInsideResult2 valueForKey:@"title"]);
+        NSLog(@"Author: %@", [dictionariesInsideResult2 valueForKey:@"author"]);
+        NSLog(@"\n");
+    }
 }
 
 @end
